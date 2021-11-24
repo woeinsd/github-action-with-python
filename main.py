@@ -11,8 +11,9 @@ if __name__ == "__main__":
 
     seoul_timezone = timezone('Asia/Seoul')
     today = datetime.now(seoul_timezone)
+    print(today)
     today_date = today.strftime("%Y년 %m월 %d일")
-
+    print(today_date)
     yes24_it_new_product_url = "http://www.yes24.com/24/Category/NewProductList/001001003?sumGb=01"
     
     soup = parsing_beautifulsoup(yes24_it_new_product_url)
